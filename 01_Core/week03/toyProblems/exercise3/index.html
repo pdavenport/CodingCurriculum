@@ -9,8 +9,55 @@
   <meta name="author" content="Mark Kroh">
 
   <style>
-  	
-  </style>
+		.body {height: 100%;}
+		.container {margin:auto; width: 240px; height: 240px; background-color: blue;}
+		/* begin star div */
+		.div5 {
+			margin-top: 116px;
+			margin-left: 110px;
+			position: absolute;
+			display: block;
+			color: black;
+			width: 0px;
+			height: 0px;
+			border-right: 10px solid transparent;
+			border-bottom: 7px solid black;
+			border-left: 10px solid transparent;
+			transform: rotate(35deg);
+		}
+		.div5:before {
+			border-bottom: 8px solid black;
+			border-left: 3px solid transparent;
+			border-right: 3px solid transparent;
+			position: absolute;
+			height: 0;
+			width: 0;
+			top: -4.5px;
+			left: -6px;
+			display: block;
+			content: '';
+			transform: rotate(-35deg);
+		}
+		.div5:after {
+			position: absolute;
+			display: block;
+			color: green;
+			top: .3px;
+			left: -10.5px;
+			width: 0px;
+			height: 0px;
+			border-right: 10px solid transparent;
+			border-bottom: 7px solid black;
+			border-left: 10px solid transparent;
+			transform: rotate(-70deg);
+			content: '';
+		}
+		/* end star div */
+		.div4 {background-color: white; width: 30px; height: 30px; border-radius: 50%; margin: 105px; position:absolute;}
+		.div3 {background-color: red; width: 100px; height: 100px; position: absolute; margin-top: 70px; margin-bottom: -150px; margin-left: 70px; transform: rotate(45deg); position:absolute;}
+		.div2 {background-color: white; width: 100%; height: 20px; margin-top: 110px; margin-bottom: 110px; position: absolute;}
+		.div1 {background-color: white; width: 20px; height: 100%; margin-left: 110px; margin-right: 110px; position: absolute;}
+	</style>
 </head>
 <body>
 	<!-- Do not touch the HTML please -->
